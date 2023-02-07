@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulário 5</title>
+
+        <style>
+            body {
+                background-color: rgb(90, 187, 187);
+            }
+            
+            fieldset {
+                display: flex=blue;
+                background-color: rgb(255, 255, 149);
+            }
+
+            legend {
+                background-color: rgb(83, 178, 255);
+                color:rgb(255, 255, 255);
+                padding: 10px 15 px;
+            }
+
+            input {
+                margin: 5px;
+            }
+
+            h1 {
+                text-align: center;
+                color: rgb(0, 53, 168);
+            }
+
+            h2 {
+                text-align: center;
+                color: rgb(0, 53, 168);
+            }
+
+            h3{
+                text-align: center;
+                color: rgb(0, 53, 168);
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h1>FORMULÁRIO SALIKÃO</h1>
+        <h3><i>--- Lar de animais ---</i></h3>
+        <hr>
+        <h2><b><u> -- QUERO OFERECER LAR TEMPORÁRIO -- </u></b></h2>
+        <form action="/xxx.php" method="get">
+            <fieldset>
+                <legend><h4>DADOS PESSOAIS:</h4></legend>
+            <label for="fname">NOME:</label>
+            <input type="text" id="fname" name="fname" placeholder="Digite seu nome">
+            <br>
+
+            <label for="phone">TELEFONE:</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+            <br>
+
+            <label for="birthday">DATA DE NASCIMENTO:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="campo_cpf" required placeholder="xxx.xxx.xxx-xx">
+            <br>
+
+            <label for="ident">RG:</label>
+            <input type="text" id="rg" name="ident">
+            <br>
+
+            <p>ENDEREÇO:
+            <table cellspacing="10">
+
+                <tr>
+                    <td>
+                     <label for="estado">Estado:</label>
+                    </td>
+                    <td text-align="left">
+                        <input type="text" name="estado">
+                    </td>
+                    <td>
+                        <label for="cidade">Cidade:</label>
+                    </td>
+                    <td text-align="left">
+                        <input type="text" name="cidade">
+                    </td>
+                    <tr>
+                        <td>
+                         <label for="bairro">Bairro: </label>
+                        </td>
+                        <td text-align="left">
+                         <input type="text" name="bairro">
+                        </td>
+                       </tr>
+                <tr>
+                 <td>
+                  <label for="rua">Rua:</label>
+                 </td>
+                 <td text-align="left">
+                  <input type="text" name="rua">
+                 </td>
+                 <td>
+                  <label for="numero">Numero:</label>
+                 </td>
+                 <td text-align="left">
+                  <input type="text" name="numero" size="4">
+                 </td>
+                 <td>
+                    <label for="complemento">Complemento:</label>
+                 </td>
+                 <td text-align="left">
+                    <input type="text" name="complemento">
+                 </td>
+                </tr>
+            </tr>
+            </table>
+            </p>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h4>CONTE UM POUCO SOBRE SEU LAR:</h4></legend>
+                <br>
+
+                <label for="qnt"> QUANTAS PESSOAS MORAM NA SUA CASA?</label> 
+                <br>
+                <input type="number" id="qnt" name="qnt">
+                <br>
+
+                <p> É A PRIMEIRA VEZ QUE OFERECE LAR TEMPORÁRIO?
+                    <br><br>
+                <label for="sim"> Sim</label>
+                <input type="radio" name="choose" value="sim">
+                <label for="nao"> Não</label>
+                <input type="radio" name="choose" value="nao">
+                </p>
+
+                <p> POSSUI OUTROS ANIMAIS NA CASA? QUAIS?
+                    <br><br>
+                    <textarea name="texto1" cols="50" rows="2"></textarea>
+                </p>
+
+                <p> TODOS DA CASA SÃO A FAVOR DE OFERECER LAR TEMPORÁRIO?
+                    <br><br>
+                    <label for="sim"> Sim</label>
+                <input type="radio" name="choose" value="sim">
+                <label for="nao"> Não</label>
+                <input type="radio" name="choose" value="nao">
+                </p>
+
+                <p> POR QUANTO TEMPO VOCÊ PODE OFERECER O LAR, CASO O ANIMAL NÃO SEJA ADOTADO?
+                    <br><br>
+                    <textarea name="texto2" cols="15" rows="1"></textarea>
+                </p>
+                <br>
+
+                <label for="img">SE POSSÍVEL, ENVIE FOTOS DO AMBIENTE QUE O ANIMAL PODERÁ FICAR:</label>
+                <br>
+                <input type="file" name="image">
+                <br><br><br>
+
+                <input type="submit" name="enviar" value="Enviar">	
+                <input type="reset" name="limpar" value="Limpar">
+                <br>
+
+            </fieldset>
+        </form>
+        <br>
+        <hr>
+    </body>
+</html>
